@@ -1,0 +1,25 @@
+Graph Traversal
+---------------
+1. BFS
+    Select any vertex
+    Explore the vertex by visiting all its adjacent vertices (add them to queue)
+    Now select next vertex (taken from queue)
+    Explore it.
+    Each vertex must be visited only once
+2. DFS
+    Select any vertex
+    Explore adjacent vertex and visit adjacent vertex(add previous vertex to stack)
+    Explore adjacent vertex
+    When leaf is reached, take next vertex from stack and continue
+    
+String pattern matching
+-----------------------
+1. KMP 
+2. Rabin Karp
+
+
+Dynamic programming
+-------------------
+1. Longest common sub-sequence
+    if a[i] == b[j] dp[i][j] = 1 + dp[i-1][j-1]
+    else dp[i][j] = max(dp[i-1,j]dp[i[j-1])
