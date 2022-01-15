@@ -1,3 +1,4 @@
+//LC: https://leetcode.com/problems/merge-intervals
 class Solution {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, new Comparator<int[]>() {
