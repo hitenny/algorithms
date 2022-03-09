@@ -1,6 +1,6 @@
 public List<List<Integer>> findLeaves(TreeNode root) {
     List<List<Integer>> result = new ArrayList<List<Integer>>();
-    helper(result, root);
+    height(result, root);
     return result;
 }
  
