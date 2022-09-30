@@ -1,0 +1,15 @@
+Replication 
+  Leader-Follower
+  Synchronous/Asynchronous
+
+Replication Lag
+  Read-after-write consistency - User who wrote reads from eleader to see what he wrote
+  Monotonic reads - user always go to the same follower/replica to see consistent data
+  Consistent-prefix reads - Data related to the same resource always go to the same partition so that all users see same order of data
+  
+Partitioning
+  By Key range
+  By hash key
+  
+  Scatter/Gather - Documents are indexed by key and then by secondary indexes within each partition. So all reads must be sent to all partitions and gathered.
+  This results in tail-latency amplification
